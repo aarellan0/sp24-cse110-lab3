@@ -2,6 +2,10 @@
     --image_border_color: color(from orange srgb 65% 25% 10%);
 }
 
+header{
+    display: none;
+    position: fixed;
+}
 h3{
     background-color: hsl(43, 81%, 50%);
     align-self: center;
@@ -13,14 +17,25 @@ button{
     background-color: #ece075;
 }
 .top_title{
+    position: relative;
+    background-image: linear-gradient(to bottom, #e4d80e, #d9a300, #c37000, #a34008, #7c0e0e);
     text-align: center;
+    display: block;
     font-style:inherit;
+    text-decoration: underline;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 /*Styling for the meeting image*/
 #meetPic{
     display: flex;
     width: 90%;
-    height: 450px;
+    height: 400px;
+    max-height: 400px;
+    max-width: 600px;
+    min-width: none;
     border-radius: 7em;
     border: 10px solid var(--image_border_color, black);
     grid-area: image1;
@@ -29,11 +44,16 @@ button{
 #meetingNotes{
     grid-area: text;
     font-size:larger;
+    color:brown;
+    font-family:  "Lilita One", sans-serif;
+
 }
 
 #forms{
     background-color: rgb(225, 187, 91);
     border-radius: 2em;
+    display: block;
+    text-align: center;
 }
 
 input[type=text]:focus {
@@ -59,3 +79,17 @@ button:hover{
 #lastmeetingheader{
     text-align: center;
 }
+#media_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    font-family:  "Lilita One", sans-serif;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
