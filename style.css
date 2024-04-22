@@ -1,29 +1,61 @@
+:root{
+    --image_border_color: color(from orange srgb 65% 25% 10%);
+}
+
 h3{
-    background-color: lightsalmon;
+    background-color: hsl(43, 81%, 50%);
     align-self: center;
 }
 body{
     background-color: bisque;
 }
+button{
+    background-color: #ece075;
+}
 .top_title{
     text-align: center;
     font-style:inherit;
 }
+/*Styling for the meeting image*/
 #meetPic{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    width: 90%;
     height: 450px;
     border-radius: 7em;
-    border: 10px solid brown;
+    border: 10px solid var(--image_border_color, black);
+    grid-area: image1;
+}
+
+#meetingNotes{
+    grid-area: text;
+    font-size:larger;
 }
 
 #forms{
-    background-color: aquamarine;
+    background-color: rgb(225, 187, 91);
     border-radius: 2em;
 }
 
 input[type=text]:focus {
     background-color: lightblue;
   }
+
+  .prevMeeting{
+    display: grid;
+    border-color: black;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-template-areas: "image1 text";
+    
+  }
+
+button:hover{
+    background-color: color-mix(in srgb,  orange 90%, black 10%);
+}
+#soloButton:active{
+    background-color: antiquewhite;
+    box-shadow: inset;
+}
+#lastmeetingheader{
+    text-align: center;
+}
