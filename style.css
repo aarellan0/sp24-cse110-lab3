@@ -1,0 +1,29 @@
+h3{
+    background-color: lightsalmon;
+    align-self: center;
+}
+body{
+    background-color: bisque;
+}
+.top_title{
+    text-align: center;
+    font-style:inherit;
+}
+#meetPic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 450px;
+    border-radius: 7em;
+    border: 10px solid brown;
+}
+
+#forms{
+    background-color: aquamarine;
+    border-radius: 2em;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+  }
