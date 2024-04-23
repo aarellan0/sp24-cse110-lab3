@@ -1,13 +1,16 @@
 :root{
     --image_border_color: color(from orange srgb 65% 25% 10%);
 }
-h1{
+*{
+    font-family:  "Lilita One", sans-serif;
+}
+h1,h2{
     padding-top: 0mm;
     padding-bottom: 5mm;
     padding-left: 2mm;
     padding-right: 2mm;
 }
-header{
+header.head{
     display: none;
     position: fixed;
 }
@@ -18,7 +21,7 @@ h3{
 body{
     background-color: bisque;
 }
-button{
+* button{
     background-color: #ece075;
 }
 .top_title{
@@ -102,7 +105,9 @@ button:hover{
     margin: auto;
     padding: 5pt, 5pt, 5pt, 5ptb;
 }
-
+a[href^="#"]{
+    color:brown;
+}
 .lilita-one-regular {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -114,4 +119,37 @@ fieldset{
     border-color: black;
     border-width: 5px;
 }
+
+label > input{
+    font-family:'Courier New', Courier, monospace;
+}
+
+div ~ footer{
+    background-color: #c37000;
+}
+
+img + p{
+    display: inline-block;
+    text-align: center;
+}
+
+h2:has(+ ol, +ul, +textarea){
+    color: brown;
+}
+ul{
+    & > li{
+        &>a{
+            &:hover{
+                color: green;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px){
+    #meetPic{
+        display: none;
+    }
+}
+
   
