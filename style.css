@@ -1,7 +1,12 @@
 :root{
     --image_border_color: color(from orange srgb 65% 25% 10%);
 }
-
+h1{
+    padding-top: 0mm;
+    padding-bottom: 5mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+}
 header{
     display: none;
     position: fixed;
@@ -38,12 +43,18 @@ button{
     min-width: none;
     border-radius: 7em;
     border: 10px solid var(--image_border_color, black);
+    border-style:ridge;
     grid-area: image1;
+    margin: 1vh, 1vw, 1vh, 1vw;
 }
 
 #meetingNotes{
     grid-area: text;
-    font-size:larger;
+    padding: 10px, 10px, 10px, 10px;
+    background-color: rgb(225, 187, 91);
+    border-color:black;
+    border-width:5px;
+    font-size:x-large;
     color:brown;
     font-family:  "Lilita One", sans-serif;
 
@@ -51,9 +62,10 @@ button{
 
 #forms{
     background-color: rgb(225, 187, 91);
-    border-radius: 2em;
-    display: block;
+    border-radius: 3em;
+    display:block;
     text-align: center;
+    border-color: black;
 }
 
 input[type=text]:focus {
@@ -66,6 +78,8 @@ input[type=text]:focus {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
     grid-template-areas: "image1 text";
+    padding: 10px, 10px, 10px, 10px;
+
     
   }
 
@@ -85,6 +99,8 @@ button:hover{
     align-items: center;
     row-gap: 5px;
     font-family:  "Lilita One", sans-serif;
+    margin: auto;
+    padding: 5pt, 5pt, 5pt, 5ptb;
 }
 
 .lilita-one-regular {
@@ -92,4 +108,10 @@ button:hover{
     font-weight: 400;
     font-style: normal;
   }
+
+fieldset{
+    border-radius: 3em;
+    border-color: black;
+    border-width: 5px;
+}
   
