@@ -43,7 +43,7 @@ body{
     height: 400px;
     max-height: 400px;
     max-width: 600px;
-    min-width: none;
+    min-width: 300px;
     border-radius: 7em;
     border: 10px solid var(--image_border_color, black);
     border-style:ridge;
@@ -53,7 +53,7 @@ body{
 
 #meetingNotes{
     grid-area: text;
-    padding: 10px, 10px, 10px, 10px;
+    padding: 10px 10px 10px 10px;
     background-color: rgb(225, 187, 91);
     border-color:black;
     border-width:5px;
@@ -91,7 +91,7 @@ button:hover{
 }
 #soloButton:active{
     background-color: antiquewhite;
-    box-shadow: inset;
+    box-shadow:#7c0e0e;
 }
 #lastmeetingheader{
     text-align: center;
@@ -146,7 +146,7 @@ ul{
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 400px){
     #meetPic{
         display: none;
     }
