@@ -48,7 +48,7 @@ body{
     border: 10px solid var(--image_border_color, black);
     border-style:ridge;
     grid-area: image1;
-    margin: 1vh, 1vw, 1vh, 1vw;
+    margin: 1vh 1vw 1vh 1vw;
 }
 
 #meetingNotes{
@@ -81,7 +81,7 @@ input[type=text]:focus {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
     grid-template-areas: "image1 text";
-    padding: 10px, 10px, 10px, 10px;
+    padding: 10px 10px 10px 10px;
 
     
   }
@@ -103,7 +103,7 @@ button:hover{
     row-gap: 5px;
     font-family:  "Lilita One", sans-serif;
     margin: auto;
-    padding: 5pt, 5pt, 5pt, 5ptb;
+    padding: 5px 5px 5px 5px;
 }
 a[href^="#"]{
     color:brown;
