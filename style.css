@@ -91,7 +91,6 @@ button:hover{
 }
 #soloButton:active{
     background-color: antiquewhite;
-    box-shadow:#7c0e0e;
 }
 #lastmeetingheader{
     text-align: center;
